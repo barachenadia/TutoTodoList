@@ -1,0 +1,9 @@
+<h1> la todo</h1>
+<%= @todo.title %> <br><br>
+<%= @todo.content%>
+<br><br>
+<a href="/todos">Tous les listes des To-Do</a> <br><br>
+<a href='/todos/<%= @todo.id %>/edit'>Modifier la tache</a> <br><br>
+<form action="/todos/<%= @todo.id %>/delete" method ="post">
+	<input type="submit" value="Supprimer la tache">
+</form>

@@ -1,0 +1,14 @@
+<h2>Liste des To-do</h2>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li>
+      <a href='/todos/<%= todo.id %>'>
+        <%= todo.title %>
+
+      </a>
+    </li>
+    <p><%= todo.content %></p>
+  <% end %>
+</ul>
+<a href="/todos/new"> Nouvelle To-do</a>
